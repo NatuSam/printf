@@ -8,8 +8,7 @@
 * @width: get width.
 * @precision: precision specifier
 * @size: Size specifier
-**
-Return: Number of chars printed.
+* Return: Number of chars printed.
 */
 int handle_write_char(char c, char buffer[],
 int flags, int width, int precision, int size)
@@ -46,8 +45,7 @@ return (write(1, &buffer[0], 1));
 * @width: get width.
 * @precision: precision specifier
 * @size: Size specifier
-**
-Return: Number of chars printed.
+* Return: Number of chars printed.
 */
 int write_number(int is_negative, int ind, char buffer[],
 int flags, int width, int precision, int size)
@@ -76,8 +74,7 @@ length, padd, extra_ch));
 * @length: Number length
 * @padd: Pading char
 * @extra_c: Extra char
-**
-Return: Number of printed chars.
+* Return: Number of printed chars.
 */
 int write_num(int ind, char buffer[],
 int flags, int width, int prec,
@@ -133,8 +130,7 @@ return (write(1, &buffer[ind], length));
 * @width: Width specifier
 * @precision: Precision specifier
 * @size: Size specifier
-**
-Return: Number of written chars.
+* Return: Number of written chars.
 */
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
@@ -182,8 +178,7 @@ return (write(1, &buffer[ind], length));
 * @padd: Char representing the padding
 * @extra_c: Char representing extra char
 * @padd_start: Index at which padding should start
-**
-Return: Number of written chars.
+* Return: Number of written chars.
 */
 int write_pointer(char buffer[], int ind, int length,
 int width, int flags, char padd, char extra_c, int padd_start)
